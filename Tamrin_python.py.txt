@@ -1,0 +1,8 @@
+cars=["Bugatti chiron","Lamborgini ur","Lamborgini aw","Rols royce ghost","Ferrari","Prt jet"]
+count_bugatti_chiron=cars.count("Bugatti chiron")
+count_rols_royce_ghost=cars.count("Rols royce ghost")
+if count_bugatti_chiron>=1:
+  print("Rich!")
+if count_rols_royce_ghost==1:
+  print("Also Rich!!")
+print(cars)
