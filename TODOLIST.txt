@@ -1,0 +1,26 @@
+#----------------------------------TO DO LIST----------------------------------------
+task=[]
+while True:
+  print("1. Add Task")
+  print("2. Show Task")
+  print("3. Delet Task")
+  print("4. Exit")
+  choice=input("Choice:")
+  if choice=="1":
+     new_task=input("Enter task: ")
+     task.append(new_task)
+  elif choice=="2":
+     print(task)
+  elif choice=="3":
+   for t in task:
+     print(t)
+   delete_task=input("Which task to delete?")
+   if delete_task in task:
+      task.remove(delete_task)
+   else:
+      print("Task not found!")
+  elif choice=="4":
+     print("Goodbye!")
+     break
+  else:
+     print("Invalid choice!")
